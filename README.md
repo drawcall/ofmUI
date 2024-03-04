@@ -4,7 +4,7 @@ __ofmUI__ is a lightweight mobile UI library specifically crafted for the _openF
 
 It offers approximately 20 diverse UI components, including `ofmView`, `ofmPanel`, `ofmImage`, `ofmDialog`, among others, to cater to a wide range of interface design requirements. Furthermore, __ofmUI__ is equipped with animation tools like `ofmTween` and `ofmTransition`, enhancing the vibrancy and dynamism of the UI. To improve intra-application communication, __ofmUI__ also integrates event communication tools like `ofmEventBus` and `ofmEvent`, ensuring seamless collaboration among components.
 
-Watch a quick [Intro Video](http://youtu.be/F18f67d_WjU).
+Watch a quick [Intro Video](http://youtu.be/).
 
 ## Features
 - More than 20 kinds of UI components
