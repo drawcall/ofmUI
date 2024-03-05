@@ -4,7 +4,7 @@ __ofmUI__ is a lightweight mobile UI library specifically crafted for the _openF
 
 It offers approximately 20 diverse UI components, including `ofmView`, `ofmPanel`, `ofmImage`, `ofmDialog`, among others, to cater to a wide range of interface design requirements. Furthermore, __ofmUI__ is equipped with animation tools like `ofmTween` and `ofmTransition`, enhancing the vibrancy and dynamism of the UI. To improve intra-application communication, __ofmUI__ also integrates event communication tools like `ofmEventBus` and `ofmEvent`, ensuring seamless collaboration among components.
 
-Watch a quick [Intro Video](http://youtu.be/).
+Moreover, it is __cross-platform__, meaning you don't have to rack your brain trying to invoke `native` UI within your project. By using it, you can maintain consistent presentation across _iOS_ and _Android_ without having to deal with more complex `native` interactions. Since it sits on the same display layer as your other elements, it significantly simplifies the development process, leading to improved efficiency and enhanced user experience.
 
 ## Features
 - More than 20 kinds of UI components
@@ -89,6 +89,7 @@ dialog->addChild(slider);
 Here's a simple example of using animation.
 
 ```c++
+// tween
 ofmTween::to(&btn->rotation, 180, 0, 0.6, EASE_OUT_BACK);
 ofmTween::to(&ball.radius, r, 0, 1, EASE_OUT_BOUNCE);
 // transition
