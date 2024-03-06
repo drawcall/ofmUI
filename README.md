@@ -62,6 +62,7 @@ dialog->addChild(slider);
 
 Develop business logic related to pages
 ```c++
+// root page
 void RootPage::setup() {
     ofmRootView::setup();
     loadFont("ofmui/fonts/Verdana.ttf", 24);
@@ -95,6 +96,29 @@ void RootPage::addListener() {
   });
   ofmEventBus::instance()->emit("Hello");
 }
+```
+
+How to set theme
+```c++
+ofmTheme::instance()->setTheme("green");
+ofmTheme::instance()->color = 0x1677FF;
+// The attributes are as follows
+int color = 0x1677FF;
+int backColor = 0xd7d7d7;
+int frontColor = 0x1677FF;
+int closeColor = 0x1890ff;
+int barColor = 0x0049ad;
+int textColor = 0x222222;
+int btnTextColor = 0xFFFFFF;
+int panelColor = 0xDDDDDD;
+int drawerColor = 0xFFFFFF;
+// font size
+float fontSize = 24;
+// global round
+float round = 10;
+// button
+float buttonWidth = 300;
+float buttonHeight = 80;
 ```
 
 Here's a simple example of using animation.
