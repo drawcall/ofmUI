@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "ofEvents.h"
+#include "ofmConstants.h"
 #include "ofmButton.h"
 #include "ofmDialog.h"
 #include "ofmLabel.h"

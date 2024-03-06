@@ -1,5 +1,4 @@
 #include "ofmImage.h"
-#include "ofGraphics.h"
 
 ofmImage::ofmImage(std::string _path) {
     path = _path;

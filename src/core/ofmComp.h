@@ -2,8 +2,7 @@
 
 #include <string>
 
-#include "ofColor.h"
-#include "ofEvents.h"
+#include "ofmConstants.h"
 #include "ofmBase.h"
 #include "ofmRect.h"
 #include "ofmTouch.h"

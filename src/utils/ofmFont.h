@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "ofTrueTypeFont.h"
+#include "ofmConstants.h"
 
 class ofmFont {
 public:

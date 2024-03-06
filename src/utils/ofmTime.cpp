@@ -1,5 +1,5 @@
-#include "ofUtils.h"
 #include "ofmTime.h"
+#include "ofmConstants.h"
 
 void ofmTime::update() {
     now = ofGetElapsedTimeMillis();

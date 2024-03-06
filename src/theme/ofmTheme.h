@@ -3,8 +3,7 @@
 #include <map>
 #include <memory>
 #include <string>
-
-#include "ofImage.h"
+#include "ofmConstants.h"
 
 // default size 640x1003
 

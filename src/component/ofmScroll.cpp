@@ -1,6 +1,5 @@
 #include <iostream>
-#include "ofAppRunner.h"
-#include "ofEvents.h"
+
 #include "ofmScroll.h"
 #include "ofmTheme.h"
 #include "ofmUtil.h"

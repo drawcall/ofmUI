@@ -3,7 +3,7 @@
 #include <map>
 #include <string>
 
-#include "ofPoint.h"
+#include "ofmConstants.h"
 #include "ofmPanel.h"
 
 class ofmDrawer : public ofmPanel {

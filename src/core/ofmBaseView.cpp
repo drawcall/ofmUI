@@ -1,5 +1,3 @@
-#include "ofAppRunner.h"
-#include "ofGraphics.h"
 #include "ofmBaseView.h"
 #include "ofmMathUtil.h"
 

@@ -1,7 +1,5 @@
 #include <iostream>
-#include "ofAppRunner.h"
-#include "ofGraphics.h"
-#include "ofImage.h"
+
 #include "ofmComp.h"
 #include "ofmCon.h"
 #include "ofmMathUtil.h"

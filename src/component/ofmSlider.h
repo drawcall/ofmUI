@@ -2,10 +2,7 @@
 
 #include <string>
 
-#include "ofColor.h"
-#include "ofEvents.h"
-#include "ofGraphics.h"
-#include "ofImage.h"
+#include "ofmConstants.h"
 #include "ofmForm.h"
 #include "ofmTheme.h"
 

@@ -1,6 +1,3 @@
-#include "ofAppRunner.h"
-#include "ofEvents.h"
-#include "ofGraphics.h"
 #include "ofmPanel.h"
 #include "ofmForm.h"
 #include "ofmTheme.h"

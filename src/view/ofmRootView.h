@@ -3,8 +3,7 @@
 #include <cstdarg>
 #include <string>
 
-#include "ofEvents.h"
-#include "ofGraphics.h"
+#include "ofmConstants.h"
 #include "ofmConsole.h"
 #include "ofmTrans.h"
 #include "ofmView.h"

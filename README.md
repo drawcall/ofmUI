@@ -19,42 +19,16 @@ To use __ofmUI__, first you need to download [openFrameworks-IOS](https://openfr
 
 To get a copy of the repository you can download the source from [http://github.com/drawcall/ofmUI](http://github.com/drawcall/ofmUI) or, alternatively, you can use git clone:
 
-git clone [git://github.com/drawcall/ofmUI.git](git://github.com/drawcall/ofmUI.git)
+git clone `git://github.com/drawcall/ofmUI.git`.   
 The addon should sit in `openFrameworks/addons/ofmUI/`.
 
 To run the examples, import them into the project generator, create a new project, and open the project file in your IDE.
 
 ## Useage
 
-Develop business logic related to pages
-
+Include main file
 ```c++
-void RootPage::setup() {
-    ofmRootView::setup();
-    loadFont("ofmui/fonts/Verdana.ttf", 24);
-    addMainView(new Page1());
-    addListener();
-}
-
-void RootPage::addListener() {
-    ofmEventBus::instance()->on("updateValues", [](map<string, float>& values) {
-        cout << "--------------------" << endl;
-        for (map<string, float>::iterator it = values.begin();
-             it != values.end(); ++it) {
-            std::cout << it->first << " " << it->second << endl;
-        }
-    });
-}
-
-void RootPage::onBtnTouchDown(ofmTouch& touch) {
-    if (touch.id == "btn1") {
-        navigateTo(new Page1(), "rollRight");
-    } else if (touch.id == "btn2") {
-        navigateTo(new Page2());
-    } else if (touch.id == "btn3") {
-        navigateTo(new Page3(), "moveLeft");
-    }
-}
+#include "ofmMain.h"
 ```
 
 Add and set component functions
@@ -84,6 +58,43 @@ slider->hasBar = true;
 slider->key = "scale";
 slider->setXY(0, -150);
 dialog->addChild(slider);
+```
+
+Develop business logic related to pages
+```c++
+void RootPage::setup() {
+    ofmRootView::setup();
+    loadFont("ofmui/fonts/Verdana.ttf", 24);
+    addMainView(new Page1());
+    addListener();
+}
+
+void RootPage::onBtnTouchDown(ofmTouch& touch) {
+    if (touch.id == "btn1") {
+        navigateTo(new Page1(), "rollRight");
+    } else if (touch.id == "btn2") {
+        navigateTo(new Page2());
+    } else if (touch.id == "btn3") {
+        navigateTo(new Page3(), "moveLeft");
+    }
+}
+
+// child page
+class Page1 : public ofmView {...
+```
+
+Event dispatch related
+```c++
+void RootPage::addListener() {
+  ofmEventBus::instance()->on("UpdateValues", [](map<string, float>& values) {
+      cout << "--------------------" << endl;
+      for (map<string, float>::iterator it = values.begin();
+          it != values.end(); ++it) {
+          std::cout << it->first << " " << it->second << endl;
+      }
+  });
+  ofmEventBus::instance()->emit("Hello");
+}
 ```
 
 Here's a simple example of using animation.

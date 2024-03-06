@@ -2,7 +2,7 @@
 
 #include <string>
 
-#include "ofEvents.h"
+#include "ofmConstants.h"
 #include "ofmComp.h"
 #include "ofmFont.h"
 

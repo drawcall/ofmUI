@@ -1,5 +1,5 @@
 #include <iostream>
-#include "ofConstants.h"
+#include "ofmConstants.h"
 #include "ofmDevice.h"
 
 using namespace std;

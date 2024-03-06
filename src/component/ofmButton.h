@@ -3,9 +3,7 @@
 #include <memory>
 #include <string>
 
-#include "ofEvents.h"
-#include "ofImage.h"
-#include "ofPoint.h"
+#include "ofmConstants.h"
 #include "ofmComp.h"
 #include "ofmTheme.h"
 #include "ofmTime.h"

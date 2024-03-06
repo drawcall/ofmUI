@@ -1,9 +1,6 @@
 #pragma once
 
-#include "ofEvents.h"
-#include "ofGraphics.h"
-#include "ofImage.h"
-#include "ofPoint.h"
+#include "ofmConstants.h"
 #include "ofmForm.h"
 
 class ofmSwitch : public ofmForm {

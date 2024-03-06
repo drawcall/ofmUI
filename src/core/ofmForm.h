@@ -1,8 +1,7 @@
 #pragma once
 
 #include <string>
-
-#include "ofEvents.h"
+#include "ofmConstants.h"
 #include "ofmComp.h"
 
 class ofmForm : public ofmComp {

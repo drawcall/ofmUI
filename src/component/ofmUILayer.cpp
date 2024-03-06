@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-#include "ofAppRunner.h"
-#include "ofGraphics.h"
 #include "ofmUILayer.h"
 #include "ofmUtil.h"
 

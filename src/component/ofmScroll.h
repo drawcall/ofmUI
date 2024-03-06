@@ -4,9 +4,7 @@
 #include <memory>
 #include <string>
 
-#include "ofEvents.h"
-#include "ofFbo.h"
-#include "ofPoint.h"
+#include "ofmConstants.h"
 #include "ofmCloseButton.h"
 #include "ofmPanel.h"
 

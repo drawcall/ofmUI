@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-#include "ofEvents.h"
-#include "ofGraphics.h"
+#include "ofmConstants.h"
 #include "ofmAlert.h"
 #include "ofmRootView.h"
 #include "ofmUI.h"

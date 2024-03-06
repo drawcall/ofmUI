@@ -2,7 +2,7 @@
 #include "ofmTween.h"
 #include "ofmUtil.h"
 #include "ofmMathUtil.h"
-#include "ofAppRunner.h"
+#include "ofmConstants.h"
 
 Tween* ofmTrans::appear(ofmBaseView* node, std::string type, float time, int ease){
     if(type == "none") return noneAppear(node, time);

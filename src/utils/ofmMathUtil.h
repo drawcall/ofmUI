@@ -1,8 +1,7 @@
 #pragma once
 #include <string>
 
-#include "ofQuaternion.h"
-#include "ofVec3f.h"
+#include "ofmConstants.h"
 
 class ofmMathUtil {
 public:

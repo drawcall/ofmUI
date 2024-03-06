@@ -1,4 +1,3 @@
-#include "ofGraphics.h"
 #include "ofmFont.h"
 #include "ofmLabel.h"
 #include "ofmTheme.h"

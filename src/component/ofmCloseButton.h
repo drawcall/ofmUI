@@ -2,8 +2,7 @@
 
 #include <string>
 
-#include "ofColor.h"
-#include "ofGraphics.h"
+#include "ofmConstants.h"
 #include "ofmButton.h"
 
 class ofmCloseButton : public ofmButton {

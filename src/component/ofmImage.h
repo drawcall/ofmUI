@@ -1,7 +1,6 @@
 #pragma once
 
-#include "ofEvents.h"
-#include "ofImage.h"
+#include "ofmConstants.h"
 #include "ofmComp.h"
 
 class ofmImage : public ofmComp {

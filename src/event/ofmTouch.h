@@ -1,8 +1,7 @@
 #pragma once
 
 #include <string>
-
-#include "ofPoint.h"
+#include "ofmConstants.h"
 
 class ofmTouch {
 public:

@@ -3,8 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "ofEvents.h"
-#include "ofGraphics.h"
+#include "ofmConstants.h"
 #include "ofmBaseView.h"
 #include "ofmTrans.h"
 #include "ofmTween.h"

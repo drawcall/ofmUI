@@ -1,6 +1,5 @@
 #include <math.h>
 
-#include "ofAppRunner.h"
 #include "ofmMathUtil.h"
 #include "ofmTheme.h"
 
@@ -37,21 +36,21 @@ int ofmTheme::retinaFontSize(int _fontSize) {
     return (int)fontSize;
 }
 
-//void ofmTheme::retinaImageSize(std::shared_ptr<ofImage> img) {
-//    if (img == NULL) return;
-//
-//    float w = retinaValue(img->getWidth());
-//    float h = retinaValue(img->getHeight());
-//    img->resize((int)w, (int)h);
-//}
-//
-//void ofmTheme::retinaImageSize(ofImage* img) {
-//    if (img == NULL) return;
-//
-//    float w = retinaValue(img->getWidth());
-//    float h = retinaValue(img->getHeight());
-//    img->resize((int)w, (int)h);
-//}
+void ofmTheme::retinaImageSize(std::shared_ptr<ofImage> img) {
+    if (img == NULL) return;
+
+    float w = retinaValue(img->getWidth());
+    float h = retinaValue(img->getHeight());
+    img->resize((int)w, (int)h);
+}
+
+void ofmTheme::retinaImageSize(ofImage* img) {
+    if (img == NULL) return;
+
+    float w = retinaValue(img->getWidth());
+    float h = retinaValue(img->getHeight());
+    img->resize((int)w, (int)h);
+}
 
 void ofmTheme::retinaValuePtr(float* val) {
     float scale = _getScale();

@@ -1,7 +1,5 @@
 #include <iostream>
 
-#include "ofAppRunner.h"
-#include "ofGraphics.h"
 #include "ofmConsole.h"
 
 using namespace std;

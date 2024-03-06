@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-#include "ofGraphics.h"
 #include "ofmCon.h"
 #include "ofmUtil.h"
 

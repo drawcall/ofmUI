@@ -1,6 +1,6 @@
 #pragma once
 
-#include "ofColor.h"
+#include "ofmConstants.h"
 #include "Tween.h"
 #include "TweenEvent.h"
 #include "ofmBase.h"
