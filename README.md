@@ -6,6 +6,8 @@ It offers approximately 20 diverse UI components, including `ofmView`, `ofmPanel
 
 Moreover, it is __cross-platform__, meaning you don't have to rack your brain trying to invoke `native` UI within your project. By using it, you can maintain consistent presentation across _iOS_ and _Android_ without having to deal with more complex `native` interactions. Since it sits on the same display layer as your other elements, it significantly simplifies the development process, leading to improved efficiency and enhanced user experience.
 
+![img](https://github.com/drawcall/ofmUI/blob/main/preview.gif?raw=true)
+
 ## Features
 - More than 20 kinds of UI components
 - ofmView page-level component
