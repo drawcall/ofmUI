@@ -2,6 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    ofSetCircleResolution(80);
     rootPage = new RootPage();
     rootPage->setup();
 }
