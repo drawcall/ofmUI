@@ -15,10 +15,10 @@ void Page2::addUI() {
     uiLayer = new ofmUILayer();
 
     ofmLabel* label = new ofmLabel();
-    label->text = "Alert Example";
+    label->text = "Page2 Example";
     label->fontSize = 32;
     label->color = ofColor::fromHex(0xFF0000);
-    label->setXY("50%", "10%");
+    label->setXY("50%", "12%");
     uiLayer->addChild(label);
     ofmEventBus::instance()->on("changeTitle",
                                 [label](string str) { label->text = str; });
@@ -26,7 +26,7 @@ void Page2::addUI() {
     // default btn2
     ofmButton* btn1 = new ofmButton();
     btn1->text = "Open Dialog";
-    btn1->animateType = "scale";
+    //btn1->animateType = "scale";
     btn1->setXY("50%", "35%");
     btn1->width = 500;
     uiLayer->addChild(btn1);
@@ -51,16 +51,22 @@ void Page2::addUI() {
 void Page2::addDialog() {
     dialog = new ofmDialog();
     dialog->text = "Hello World";
+    dialog->height = 700;
+    dialog->alpha = 0.9;
     dialog->hasCloseBtn = true;
     dialog->setXY("50%", "50%");
     uiLayer->addChild(dialog);
 
     ofmLabel* label = new ofmLabel();
-    label->text = "Change Title";
+    label->text = "Change Page Title";
     label->color = ofColor::fromHex(0xccffee);
-    label->setXY(0, -200);
-    label->fontSize = 30;
+    label->setXY(0, -250);
+    label->fontSize = 24;
     dialog->addChild(label);
+    
+    ofmImage* img = new ofmImage("images/info.png");
+    img->setXY(0, 0);
+    dialog->addChild(img);
 
     // default btn
     float w = dialog->width;

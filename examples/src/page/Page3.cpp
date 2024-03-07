@@ -16,16 +16,16 @@ void Page3::addUI() {
     uiLayer = new ofmUILayer();
 
     ofmLabel* label = new ofmLabel();
-    label->text = "Forms Example";
-    label->color = ofColor::fromHex(0xFF0000);
-    label->setXY("50%", "10%");
+    label->text = "Page3 Example";
+    label->textColor = ofColor::fromHex(0xFFFFFF);
+    label->setXY("50%", "12%");
     uiLayer->addChild(label);
 
     // default btn2
     ofmButton* btn1 = new ofmButton();
     btn1->text = "Open Dialog";
     btn1->animateType = "scale";
-    btn1->setXY("50%", "35%");
+    btn1->setXY("50%", "50%");
     btn1->width = 500;
     uiLayer->addChild(btn1);
     btn1->id = "btn1";
@@ -39,8 +39,13 @@ void Page3::addUI() {
     uiLayer->addChild(btn2);
     btn2->id = "btn2";
     ofAddListener(btn2->touchDown, this, &Page3::onBtnTouchDown);
+    
+    ofmButton* btn3 = new ofmButton("images/btn.png");
+    btn3->setXY("50%", "35%");
+    uiLayer->addChild(btn3);
+    btn3->id = "btn3";
+    
     dialog = addDialog();
-
     addUILayer(uiLayer);
 }
 

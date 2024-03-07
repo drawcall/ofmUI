@@ -15,5 +15,6 @@ public:
     ofmUILayer* uiLayer;
     Ball ball1;
     Ball ball2;
+    ofColor bgColor;
     float brotation = 0;
 };

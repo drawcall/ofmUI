@@ -24,13 +24,17 @@ void RootPage::addUI() {
         ofmButton* btn = new ofmButton();
         btn->id = "btn" + to_string(i);
         btn->text = "PAGE 0" + to_string(i);
-        btn->setWH("28%");
+        btn->setWH(180, 80);
+        btn->round = 16;
+        btn->color = ofColor::fromHex(0xff0000);
         float x = (2 * i - 1) * 100 / (2 * l);
         btn->setXY(to_string(x) + "%", "90%");
         uiLayer->addChild(btn);
+        btns.push_back(btn);
         ofAddListener(btn->touchDown, this, &RootPage::onBtnTouchDown);
     }
-
+    
+    btns[0]->color.setSaturation(100);
     addUILayer(uiLayer);
     addDrawer();
 }
@@ -87,11 +91,18 @@ void RootPage::addListener() {
 }
 
 void RootPage::onBtnTouchDown(ofmTouch& touch) {
+    for(unsigned int i = 0; i < btns.size(); i++) {
+        btns[i]->color.setSaturation(255);
+    }
+    
     if (touch.id == "btn1") {
         navigateTo(new Page1(), "rollRight");
+        btns[0]->color.setSaturation(100);
     } else if (touch.id == "btn2") {
         navigateTo(new Page2());
+        btns[1]->color.setSaturation(100);
     } else if (touch.id == "btn3") {
         navigateTo(new Page3(), "moveLeft");
+        btns[2]->color.setSaturation(100);
     }
 }

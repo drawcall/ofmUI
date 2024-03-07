@@ -9,15 +9,16 @@ void Page1::setup() {
     ball2.color = ofColor::fromHex(0x0f1033);
     ball2.radius = 70;
     ball2.vy = -3;
+    bgColor = ofColor::fromHex(0xFFFF0B);
 }
 
 void Page1::addUI() {
     uiLayer = new ofmUILayer();
 
     ofmLabel* label = new ofmLabel();
-    label->text = "Buttons Example";
+    label->text = "Page1 Example";
     label->color = ofColor::fromHex(0xFF0000);
-    label->setXY("50%", "10%");
+    label->setXY("50%", "12%");
     uiLayer->addChild(label);
 
     // default btn3
@@ -56,8 +57,10 @@ void Page1::onBtnTouchDown(ofmTouch& touch) {
         alert->setXY(ofGetWidth() / 2, ofGetHeight() / 2);
         alert->appear();
     } else if (touch.id == "btn2") {
-        float r = ofmMathUtil::randomAToB(10, 300);
-        ofmTween::to(&ball1.radius, r, 0, 1, EASE_OUT_BOUNCE);
+        float r = ofmMathUtil::randomAToB(10, 400);
+        ofmTween::to(&ball1.radius, r, 0, 0.7, EASE_OUT_BACK);
+        float hex = ofmMathUtil::randomAToB(0, 255);
+        bgColor.setBrightness((int)hex);
     } else {
         brotation += 360;
         ofmComp* btn = uiLayer->getCompById(touch.id);
@@ -72,7 +75,7 @@ void Page1::update() {
 }
 
 void Page1::draw() {
-    ofSetColor(255, 255, 11);
+    ofSetColor(bgColor);
     ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
 
     ofmView::draw();

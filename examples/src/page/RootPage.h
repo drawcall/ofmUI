@@ -12,4 +12,5 @@ public:
     
     ofmUILayer* uiLayer;
     ofmDrawer* drawer;
+    std::vector<ofmButton*> btns;
 };
